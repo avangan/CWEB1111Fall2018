@@ -1,0 +1,52 @@
+{
+    "name": "Silas Alexander",
+    "home_town": "Brooklyn Park",
+    "program": "Web Development and Database Design",
+    "school": "Dunwoody College",
+    "term": "Fall 2018",
+    "cohort": "cohort d",
+    "number_of_courses": 3,
+    "course":[
+        {
+            "course_identifier": "CWEB1010",
+            "course_name": "Introduction to Web Development",
+            "instructor" : "Chris Fulton",
+            "start_time" : "8am"
+        },
+        {
+            "course_identifier": "CWEB1011",
+            "course_name": "Introduction to Programming Fundamentals",
+            "instructor" : [
+                { 
+                    "instructor_name": "Chris Fulton",
+                    "experience_teaching": 4
+                },
+                {
+                    "instructor_name": "Sharon Jirak",
+                    "experience_teaching": 3
+                }
+            ],
+            "start_time" : "9am"
+        },
+        {
+            "course_identifier": "CNTS1110",
+            "course_name": "Introduction to Computer Networking",
+            "instructor" : "Dave Mansheffer",
+            "start_time" : "11:30am"
+        }
+    ],
+    "clubs": [
+        {
+            "club_name": "Game Development Club",
+            "room_location": null,
+            "meeting_info": null
+        },
+        {
+            "club_name": "Opensource Club",
+            "room_location": ["Brown 30", "Black 27"],
+            "meeting_info": "Meet twice a month"
+        }
+    ]
+
+
+}

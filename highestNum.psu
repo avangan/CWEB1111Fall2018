@@ -1,0 +1,36 @@
+//C.Fulton
+START //symbolizes the main method
+	
+	DECLARATIONS //Declare the variables you will need for your program.
+		num y
+		num x
+		num userNum
+		num highNum
+		num count
+		num SIZE = 3
+		num randomNum[SIZE]
+	
+	//Populate the array and get the users input
+	count = 0
+	WHILE count < 3 OR count > 0
+		OUTPUT "Please enter a number for slot " + (count +1)
+		INPUT userNum
+		randomNum[count] = userNum
+		count = count + 1  //another way is count++
+	ENDWHILE
+	
+	//Determine which number is the highest
+	highNum = 0 
+	x = 0
+	//Loop Structure
+	WHILE x < 3
+		//Decision Structure - Single alternative
+		IF randomNum[x] >= highNum THEN
+			highNum = randomNum[x]
+		ENDIF
+		x= x+1 //Increment initial value another way of writing x = x +1 is x++
+	ENDWHILE
+	
+	OUTPUT "The highest number you entered is " + highNum
+	OUTPUT "Thanks!"
+STOP

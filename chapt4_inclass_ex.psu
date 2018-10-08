@@ -1,0 +1,52 @@
+//C.Fulton
+
+
+//Console Application
+//Main method  - What involkes the program
+START
+	
+	//Declare variables
+	DECLARATIONS
+		num sales_id, policy_sold
+		num LOW_END = 5, HIGH_END = 10
+		num EXIT = -999 //Sentinel value
+	
+
+	//Output to help end-user to understand program
+	OUTPUT "Welcome, this program allows you to enter your sales id and the 
+	       number of policies sold within a month.  The program will then tell you 
+		   if you are a high performer."
+	//We need to get the sales id 
+	OUTPUT "To get started, please enter your sales id"
+	INPUT sales_id   //Serve as our primer
+	
+	WHILE(sales_id <> EXIT)  //<> is the same as !=
+
+		
+		//We need to know how policies were sold during a month
+		OUTPUT "Please enter the number policies you sold last month"
+		INPUT policy_sold
+		
+		//We need a decision structure that will determine whether or not 
+		//the sales person sold between 5 and 10 policies in the month
+		
+		IF(policy_sold >= LOW_END AND policy_sold <= HIGH_END) THEN
+			OUTPUT "You sold between" + LOW_END + " and " + HIGH_END + " policies within the last month"
+		ELSE
+			OUTPUT "You did not sell between" + LOW_END + " and " + HIGH_END + "policies"
+		ENDIF
+		
+
+		
+		
+		
+		//Ask primer again to see if they want to continue 
+		OUTPUT "To continue please enter another sales person id or enter -999 to exit the program"
+		INPUT sales_id
+	ENDWHILE
+	
+	OUTPUT "Thank you for using this program"
+	
+	
+
+STOP

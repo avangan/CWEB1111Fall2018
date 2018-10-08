@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="fulchr"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-10 10:27:27 AM"/>
+        <attribute name="created" value="ZnVsY2hyO0NORDgyNTk0VEo7MjAxOC0wOS0xMDsxMDowMDoxMCBBTTsyNTM1"/>
+        <attribute name="edited" value="ZnVsY2hyO0NORDgyNTk0VEo7MjAxOC0wOS0xMDsxMDoyNzoyNyBBTTsyOzI2NjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declare the the variables I would need for end-user to enter three numbers  -- THE BIG QUESTION WHEN DECLARING VARIABLES IS TO ASK WHAT INFORMATION DO I NEED!!"/>
+            <declare name="numOne" type="Integer" array="False" size=""/>
+            <declare name="numTwo" type="Integer" array="False" size=""/>
+            <declare name="numThree" type="Integer" array="False" size=""/>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <declare name="limitTen" type="Integer" array="False" size=""/>
+            <declare name="userNumbers" type="Integer" array="True" size="3"/>
+            <assign variable="limitTen" expression="10"/>
+            <output expression="&quot;Please enter your first number: &quot;" newline="True"/>
+            <input variable="numOne"/>
+            <output expression="&quot;Please enter your second number: &quot;" newline="True"/>
+            <input variable="numTwo"/>
+            <output expression="&quot;Please enter your third number: &quot;" newline="True"/>
+            <input variable="numThree"/>
+            <assign variable="sum" expression="numOne + numTwo + numThree"/>
+            <assign variable="userNumbers[0]" expression="numOne"/>
+            <assign variable="userNumbers[1]" expression="numTwo"/>
+            <assign variable="userNumbers[2]" expression="numThree"/>
+            <comment text="I need to assign each of the variables based on when the end-user inputs."/>
+            <if expression="sum &gt; limitTen">
+                <then>
+                    <output expression="&quot;The numbers you entered are greater than &quot; &amp; limitTen" newline="False"/>
+                </then>
+                <else>
+                    <output expression="&quot;The numbers you entered are less than &quot; &amp; limitTen" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;Thank you for using this program&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

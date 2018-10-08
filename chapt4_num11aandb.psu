@@ -1,0 +1,60 @@
+//C.Fulton
+START  //main()
+	DECLARATIONS
+		string firstName, lastName
+		num shiftsWorked, transactionNum, dollarValue, prodScore, userBonus
+		num THIRTY_UNDER_BONUS = 25, EIGHTY_UNDER_BONUS = 50, TWOHUNDRED_UNDER_BONUS = 100,  TWOHUNDRED_HIGHER_BONUS = 200
+		
+		string EXIT = "STOP" //Sentinel Value
+		
+	OUTPUT "This program will ask you input salesperson info and notify you if your a high achiever"
+	OUTPUT "To get started, please enter your first name"
+	INPUT firstName //primer
+	
+	WHILE firstName <> EXIT
+		OUTPUT "Please enter your last name"
+		INPUT lastName
+		
+		OUTPUT "Please enter the number of shifts"
+		INPUT shiftsWorked
+		
+		OUTPUT "Please enter the number of transactions completed this month"
+		INPUT transactionNum
+		
+		OUTPUT "Please enter the total amount of transactions for this month"
+		INPUT dollarValue
+		
+		//Figure out the productivity score - taking shiftsworked/transactionNum  /
+		prodScore = (shiftsWorked/transactionNum)/dollarValue
+		
+		//We need to figure out which range their productivity score falls within
+		//Decision structure
+		IF prodScore <= 30 THEN
+			userBonus = THIRTY_UNDER_BONUS
+			
+		ELSE
+			IF prodScore <=80 THEN
+				userBonus = EIGHTY_UNDER_BONUS
+			ELSE
+				IF prodScore < 200 THEN
+					userBonus = TWOHUNDRED_UNDER_BONUS
+				ELSE
+					userBonus = TWOHUNDRED_HIGHER_BONUS
+				ENDIF
+			ENDIF
+		ENDIF
+
+		
+		OUTPUT firstName + " " + lastName + " your productivity score will earn you a " + userBonus + " bonus."
+		
+		//Ask the primer again
+		OUTPUT "IF you would like to enter another salesperson, please enter a new name or enter 'STOP' to 
+		       exit program"
+		INPUT firstName
+	ENDWHILE
+	OUTPUT "Thank you for using this program"
+	
+			
+		
+			
+STOP //end of main method

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="fulchr"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-18 10:27:38 AM"/>
+        <attribute name="created" value="ZnVsY2hyO0NORDgyNTk0VEo7MjAxOC0wOS0xODswOTo0Njo1MiBBTTsyNTY3"/>
+        <attribute name="edited" value="ZnVsY2hyO0NORDgyNTk0VEo7MjAxOC0wOS0xODsxMDoyNzozOCBBTTszOzI2NzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="firstName, lastName, EXIT" type="String" array="False" size=""/>
+            <declare name="shiftsWorked, transactionNum, userBonus" type="Integer" array="False" size=""/>
+            <declare name="dollarValue, prodScore" type="Real" array="False" size=""/>
+            <declare name="thirtyBonus, eightyBonus, twoHundredBonus, overTwoHundredBonus" type="Integer" array="False" size=""/>
+            <assign variable="thirtyBonus" expression="25"/>
+            <assign variable="eightyBonus" expression="50"/>
+            <assign variable="twoHundredBonus" expression="100"/>
+            <assign variable="overTwoHundredBonus" expression="200"/>
+            <assign variable="EXIT" expression="&quot;STOP&quot;"/>
+            <output expression="&quot;This program will ask you input salesperson info and notify you if your a high achiever&quot;" newline="True"/>
+            <output expression="&quot;To get started, please enter your first name&quot;" newline="True"/>
+            <input variable="firstName"/>
+            <while expression="firstName != EXIT">
+                <output expression="&quot;Please enter your last name&quot;" newline="True"/>
+                <input variable="lastName"/>
+                <output expression="&quot;Please enter the number of shifts&quot;" newline="True"/>
+                <input variable="shiftsWorked"/>
+                <output expression="&quot;Please enter the number of transactions completed this month&quot;" newline="True"/>
+                <input variable="transactionNum"/>
+                <output expression="&quot;Please enter the total amount of transactions for this month&quot;" newline="True"/>
+                <input variable="dollarValue"/>
+                <assign variable="prodScore" expression="(dollarValue/transactionNum)/shiftsWorked"/>
+                <if expression="prodScore &lt;= 30">
+                    <then>
+                        <assign variable="userBonus" expression="thirtyBonus"/>
+                    </then>
+                    <else>
+                        <if expression="prodScore &lt;=80">
+                            <then>
+                                <assign variable="userBonus" expression="eightyBonus"/>
+                            </then>
+                            <else>
+                                <if expression="prodScore &lt; 200">
+                                    <then>
+                                        <assign variable="userBonus" expression="twoHunderedBonus"/>
+                                    </then>
+                                    <else>
+                                        <assign variable="userBonus" expression="overTwoHundredBonus"/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="firstName &amp; &quot; &quot; &amp; lastName &amp; &quot; your productivity score will earn you a &quot; &amp; userBonus &amp; &quot; bonus.&quot;" newline="True"/>
+                <output expression="&quot;IF you would like to enter another salesperson, please enter a new name or enter 'STOP' to exit program&quot;" newline="True"/>
+                <input variable="firstName"/>
+            </while>
+            <output expression="&quot;Thank you for using this program&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

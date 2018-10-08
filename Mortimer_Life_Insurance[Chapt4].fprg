@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="fulchr"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-14 10:10:14 AM"/>
+        <attribute name="created" value="ZnVsY2hyO0NORDgyNTk0VEo7MjAxOC0wOS0xNDswOTo1NzozMiBBTTsyNTYz"/>
+        <attribute name="edited" value="ZnVsY2hyO0NORDgyNTk0VEo7MjAxOC0wOS0xNDsxMDoxMDoxNCBBTTsyOzI2NTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaring variables for program"/>
+            <declare name="salesId, policySold, LOWEND, HIGHEND, EXIT" type="Integer" array="False" size=""/>
+            <assign variable="LOWEND" expression="5"/>
+            <assign variable="HIGHEND" expression="10"/>
+            <assign variable="EXIT" expression="-999"/>
+            <output expression="&quot;Welcome, this program allows you to enter your sales id and the number of policies sold within a month.  The program will then tell you if you are a high performer.&quot;" newline="True"/>
+            <output expression="&quot;To get started, please enter your sales id&quot;" newline="True"/>
+            <input variable="salesId"/>
+            <while expression="salesId != EXIT">
+                <output expression="&quot;Please enter the number policies you sold last month&quot;" newline="True"/>
+                <input variable="policySold"/>
+                <if expression="(policySold &gt;= LOWEND) &amp;&amp; (policySold &lt;= HIGHEND)">
+                    <then>
+                        <output expression="&quot;Sales person with id of &quot; &amp; salesId &amp; &quot; sold between &quot; &amp; LOWEND &amp; &quot; and &quot; &amp; HIGHEND &amp; &quot; policies within the last month&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Sales person with id of &quot; &amp; salesId &amp; &quot; did not sell inbetween&quot; &amp; LOWEND &amp; &quot; and &quot; &amp; HIGHEND &amp; &quot; policies&quot;" newline="True"/>
+                    </else>
+                </if>
+                <output expression="&quot;To continue please enter another sales person id or enter -999 to exit the program&quot;" newline="True"/>
+                <input variable="salesId"/>
+            </while>
+            <output expression="&quot;Thank you for using this program&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

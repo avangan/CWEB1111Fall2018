@@ -1,0 +1,14 @@
+C:\Users\fulchr\Google Drive\Dunwoody\CWEB1111\Fall 2018\in-class_examples\basic_aspnet\bin\Debug\netcoreapp2.1\basic_aspnet.deps.json
+C:\Users\fulchr\Google Drive\Dunwoody\CWEB1111\Fall 2018\in-class_examples\basic_aspnet\bin\Debug\netcoreapp2.1\basic_aspnet.runtimeconfig.json
+C:\Users\fulchr\Google Drive\Dunwoody\CWEB1111\Fall 2018\in-class_examples\basic_aspnet\bin\Debug\netcoreapp2.1\basic_aspnet.runtimeconfig.dev.json
+C:\Users\fulchr\Google Drive\Dunwoody\CWEB1111\Fall 2018\in-class_examples\basic_aspnet\bin\Debug\netcoreapp2.1\basic_aspnet.dll
+C:\Users\fulchr\Google Drive\Dunwoody\CWEB1111\Fall 2018\in-class_examples\basic_aspnet\bin\Debug\netcoreapp2.1\basic_aspnet.pdb
+C:\Users\fulchr\Google Drive\Dunwoody\CWEB1111\Fall 2018\in-class_examples\basic_aspnet\obj\Debug\netcoreapp2.1\basic_aspnet.csprojAssemblyReference.cache
+C:\Users\fulchr\Google Drive\Dunwoody\CWEB1111\Fall 2018\in-class_examples\basic_aspnet\obj\Debug\netcoreapp2.1\basic_aspnet.csproj.CoreCompileInputs.cache
+C:\Users\fulchr\Google Drive\Dunwoody\CWEB1111\Fall 2018\in-class_examples\basic_aspnet\obj\Debug\netcoreapp2.1\basic_aspnet.RazorAssemblyInfo.cache
+C:\Users\fulchr\Google Drive\Dunwoody\CWEB1111\Fall 2018\in-class_examples\basic_aspnet\obj\Debug\netcoreapp2.1\basic_aspnet.RazorAssemblyInfo.cs
+C:\Users\fulchr\Google Drive\Dunwoody\CWEB1111\Fall 2018\in-class_examples\basic_aspnet\obj\Debug\netcoreapp2.1\basic_aspnet.AssemblyInfoInputs.cache
+C:\Users\fulchr\Google Drive\Dunwoody\CWEB1111\Fall 2018\in-class_examples\basic_aspnet\obj\Debug\netcoreapp2.1\basic_aspnet.AssemblyInfo.cs
+C:\Users\fulchr\Google Drive\Dunwoody\CWEB1111\Fall 2018\in-class_examples\basic_aspnet\obj\Debug\netcoreapp2.1\basic_aspnet.RazorTargetAssemblyInfo.cache
+C:\Users\fulchr\Google Drive\Dunwoody\CWEB1111\Fall 2018\in-class_examples\basic_aspnet\obj\Debug\netcoreapp2.1\basic_aspnet.dll
+C:\Users\fulchr\Google Drive\Dunwoody\CWEB1111\Fall 2018\in-class_examples\basic_aspnet\obj\Debug\netcoreapp2.1\basic_aspnet.pdb
