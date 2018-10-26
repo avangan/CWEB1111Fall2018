@@ -18,7 +18,7 @@ public class student {
         while(y < students.length){
             //Sequence
            System.out.println("For " + students[y] + " the schedule is listed below:");
-           x =0;
+           x =0; //initial variable
            //So now output the courses for a particular student. We need a looping structure
            while(x < classes.length){
                //sequence
